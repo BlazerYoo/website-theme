@@ -1,7 +1,7 @@
 # website theme
 Add light/dark theme to your website
 
-Made with the [Dark Reader](https://github.com/darkreader/darkreader) api.
+Made with the [Dark Reader](https://github.com/darkreader/darkreader) api
 
 Theme preference is saved using `localStorage`
 
