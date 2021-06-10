@@ -1,28 +1,26 @@
-const button = document.getElementById('but');
+const checkbox = document.getElementById('checkbox');
 
 if (localStorage.getItem('theme') == null) {
-  console.log('theme is null')
+  console.log('theme is ' + localStorage.getItem('theme'));
   localStorage.setItem('theme', 'light');
 }
 
 if (localStorage.getItem('theme') == 'light') {
   console.log('theme is ' + localStorage.getItem('theme'))
   DarkReader.disable();
-  button.innerHTML = 'MAKE DARK';
 } else {
   console.log('theme is ' + localStorage.getItem('theme'))
   DarkReader.enable();
-  button.innerHTML = 'MAKE LIGHT';
+  checkbox.setAttribute('checked', true);
 }
 
-function buttonClick() {
-  if (button.innerHTML == 'MAKE LIGHT') {
+function toggle() {
+  if (localStorage.getItem('theme') == 'dark') {
     localStorage.setItem('theme', 'light');
     DarkReader.disable();
-    button.innerHTML = 'MAKE DARK';
   } else {
     localStorage.setItem('theme', 'dark');
     DarkReader.enable();
-    button.innerHTML = 'MAKE LIGHT';
   }
+  console.log('theme is ' + localStorage.getItem('theme'))
 }

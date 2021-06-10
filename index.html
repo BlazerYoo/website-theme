@@ -4,11 +4,16 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>Light/Dark Theme</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
     <center>
       <h1>HELLO</h1>
-      <button id="but" type="button" onclick="buttonClick()"></button>
+      <br><br>
+      <label class="switch">
+        <input id="checkbox" type="checkbox" onclick="toggle()">
+        <span class="slider round"></span>
+      </label>
     </center>
     <script src="https://cdn.jsdelivr.net/npm/darkreader@4.9.32/darkreader.min.js"></script>
     <script src="script.js"></script>
